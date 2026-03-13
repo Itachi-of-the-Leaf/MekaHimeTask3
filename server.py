@@ -5,7 +5,7 @@ import logging
 from typing import List
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from pydantic import BaseModel
-from pipeline import AudioPipeline
+from audio_pipeline.pipeline import AudioPipeline
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')

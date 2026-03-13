@@ -9,9 +9,9 @@ import torch
 import torchaudio
 import torchaudio.transforms as T
 
-from core.separator import SpeakerSeparator
-from core.embedder import VoiceprintEmbedder
-from core.vector_db import SpeakerDB
+from audio_pipeline.core.separator import SpeakerSeparator
+from audio_pipeline.core.embedder import VoiceprintEmbedder
+from audio_pipeline.core.vector_db import SpeakerDB
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
