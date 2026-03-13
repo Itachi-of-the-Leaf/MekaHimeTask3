@@ -8,3 +8,7 @@ uvicorn
 python-multipart
 pydub
 librosa
+nv_one_logger_core
+nv_one_logger_training_telemetry
+nv_one_logger_pytorch_lightning_integration
+typeguard==2.13.3

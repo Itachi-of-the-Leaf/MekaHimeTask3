@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 # Import the pipeline
-from pipeline import AudioPipeline  
+from audio_pipeline.pipeline import AudioPipeline 
 def run_test():
     try:
         
@@ -81,7 +81,10 @@ def run_silence_test():
     """
     print("\n--- Running Silence Detection Test ---")
     pipeline = AudioPipeline(db_path="./test_chroma_db")
-    silence_path = "../test_audio/silence.wav"
+    base_dir = "."
+    if not os.path.exists("test_audio") and os.path.exists("../test_audio"):
+        base_dir = ".."
+    silence_path = os.path.join(base_dir, "test_audio/silence.wav")
     
     if not os.path.exists(silence_path):
         print(f"Creating silence file at {silence_path}")
