@@ -1,0 +1,10 @@
+torch
+torchaudio
+speechbrain
+nemo_toolkit[asr]
+chromadb
+fastapi
+uvicorn
+python-multipart
+pydub
+librosa

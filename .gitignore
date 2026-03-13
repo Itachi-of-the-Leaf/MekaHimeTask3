@@ -1,0 +1,36 @@
+# Python stuff
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Audio diagnostic artifacts
+test_audio/separated/
+*.wav
+!test_audio/*.wav
+
+# Machine Learning caches
+pretrained_models/
+.cache/
+lightning_logs/
+
+# Database storage
+*chroma_db/
+chroma.sqlite3
+
+# Logs and diagnostic data
+*.log
+server.log
+test_final_handover.log
+test_enterprise*.log
+
+# Project specific
+.bak*
+*.bak
+core/*.bak
+pipeline.py.bak*
+core/separator.py.bak
